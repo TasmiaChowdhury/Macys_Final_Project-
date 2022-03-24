@@ -7,7 +7,7 @@ public class Reg_Elements_Rubyat {
 	  
 	@FindBy(id="standard-sign-up")
 	public WebElement Registration;
-	
+	 
 	
 	@FindBy(xpath="//*[@id=\"create-account\"]/div/div[1]/div/h1")
 	public WebElement ConfirmPge;
