@@ -28,7 +28,7 @@ public class Reg_Action_Rubyat {
 		Set_Drivers.driver.manage().window().maximize();
 		Set_Drivers.driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		}
-	 
+	  
 
 	public void Click_create_button() {
 		System.out.println("Clicking create account button");

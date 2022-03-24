@@ -13,7 +13,7 @@ public class Step_def_Rubyat {
 	
 	 Reg_Action_Rubyat objActions=new Reg_Action_Rubyat();
 	 
-	 
+	  
 	 @Given("User is on Macys sign-in page")
 	public void user_is_on_Macys_sign_in_page() {
 		objActions.getCreatePage();
