@@ -1,4 +1,4 @@
-#Author: Fatima Rubyat...
+#Author: Fatima Rubyat
 Feature: Regitration functionality
    
   Scenario: The user should be able to register for an account using valid data
