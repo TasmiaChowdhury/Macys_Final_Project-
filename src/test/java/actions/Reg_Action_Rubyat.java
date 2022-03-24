@@ -68,7 +68,6 @@ public class Reg_Action_Rubyat {
 	
 	public void Birthdate() {
 		System.out.println("insering birthdate");
-		//WebDriver driver=new ChromeDriver();
 		Select drp_Month=new Select(objElements.Month);
 		drp_Month.selectByVisibleText("July");
 		
@@ -87,6 +86,10 @@ public class Reg_Action_Rubyat {
 		objElements.Create_Account.click();
 	}
 	
+	public void Home_page() {
+		System.out.println("navigation to the homepage ");
+		
+	}
 	
 	
 
