@@ -2,7 +2,9 @@ package step_defination;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
+import Utilities.Helper;
 import actions.Reg_Action_Rubyat;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -75,7 +77,8 @@ public class Step_def_Rubyat {
 
 	@Then("User is navigated to the account homepage")
 	public void user_is_navigated_to_the_account_homepage() {
-System.out.println("Still wokring on it ");
+		Assert.assertEquals(Helper.getCurrentUrl(), "https://www.macys.com/myaccount/home");
+		objActions.HomePage();
 	}
 
 }

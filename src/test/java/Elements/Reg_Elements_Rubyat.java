@@ -36,6 +36,11 @@ public class Reg_Elements_Rubyat {
 	@FindBy(xpath="//*[@id=\"ca-profile-submit\"]")
 	public WebElement Create_Account;
 	
+	@FindBy(xpath="//*[@id=\"my-account-container\"]/div/div[2]/section[2]/section[1]/div/div/div[2]/div[1]/h1")
+	public WebElement Home_page;
+	
+	
+	
 	
 	
 

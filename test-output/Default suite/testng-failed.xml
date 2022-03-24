@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Runner.Reg_Runner_Rubyat$RunCucumberTest">
+      <class name="Runner.Rubyat_Test_Runner$RunCucumberTest">
         <methods>
           <include name="setUpClass"/>
-          <include name="beforeTest"/>
           <include name="afterTest"/>
+          <include name="beforeTest"/>
           <include name="runScenario" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- Runner.Reg_Runner_Rubyat$RunCucumberTest -->
+      </class> <!-- Runner.Rubyat_Test_Runner$RunCucumberTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

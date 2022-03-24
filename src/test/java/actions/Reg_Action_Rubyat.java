@@ -85,8 +85,14 @@ public class Reg_Action_Rubyat {
 		objElements.Create_Account.click();
 	}
 	
-	public void Home_page() {
+	public void HomePage() {
 		System.out.println("navigation to the homepage ");
+		String Txt=objElements.Home_page.getText();
+		if (Txt.contains("Hi,")) {
+			System.out.println("Registration is successful");
+		}else {
+			System.out.println("Try again");
+		}
 		
 	}
 	
