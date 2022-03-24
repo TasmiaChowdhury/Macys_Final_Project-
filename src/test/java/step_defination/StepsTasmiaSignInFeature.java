@@ -11,7 +11,8 @@ import io.cucumber.java.en.*;
 
 public class StepsTasmiaSignInFeature {
 	
-	ActionsTasmia action = new ActionsTasmia();
+	WebDriver driver;
+	ActionsTasmia action = new ActionsTasmia(driver);
 
 	@Given("User is on Macys sign is page")
 	public void user_is_on_Macys_sign_is_page() {
@@ -34,12 +35,11 @@ public class StepsTasmiaSignInFeature {
 		action.clickSignin();
 
 	}
-
-
+	
 	@Then("User should be nevigated to Macys homepage")
 	public void user_should_be_nevigated_to_Macys_homepage() {
-		Assert.assertEquals(Helper.getCurrentUrl(), "https://www.macys.com/myaccount/home");
-
+		Assert.assertEquals(Helper.getCurrentUrl(), "https://www.macys.com/account/signin");
+		action.errormessage();
 	}
 
 

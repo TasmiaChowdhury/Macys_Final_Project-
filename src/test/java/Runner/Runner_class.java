@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 
 public class Runner_class {
 
-	@CucumberOptions(plugin = { "pretty", "html:target/cucumber", "json:target/cucumber-json.json" }, features = {
+	@CucumberOptions(plugin = { "pretty", "html:target/reports/report.html", "json:target/reports/report.json" }, features = {
 	"src/test/resources/Features" }, glue = { "Macys_Final_Project.step_defination" }, tags = { "@chrome" }, monochrome = true)
 
 public class RunCucumberTest extends AbstractTestNGCucumberTests {
