@@ -74,7 +74,7 @@ public class Step_def_Rubyat {
 
 	@Then("User is navigated to the account homepage")
 	public void user_is_navigated_to_the_account_homepage() {
-System.out.println("Still wokring on it ");
+System.out.println("Still wokring on it");
 	}
 
 }

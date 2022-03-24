@@ -19,7 +19,6 @@ public class Reg_Action_Rubyat {
 	
 	public Reg_Action_Rubyat() {
 		
-		
 		objElements= new Reg_Elements_Rubyat();
 		PageFactory.initElements(Set_Drivers.driver, objElements);
 		
