@@ -1,6 +1,6 @@
 #Author: Fatima Rubyat
 Feature: Regitration functionality
-   
+    
   Scenario: The user should be able to register for an account using valid data
     Given User is on Macys sign-in page
     When Click on Create Account 

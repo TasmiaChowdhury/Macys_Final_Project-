@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class Reg_Elements_Rubyat {
-	 
+	  
 	@FindBy(id="standard-sign-up")
 	public WebElement Registration;
 	
