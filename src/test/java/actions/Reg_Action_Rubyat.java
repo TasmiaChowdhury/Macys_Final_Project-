@@ -17,7 +17,7 @@ public class Reg_Action_Rubyat {
 	WebDriver driver=new ChromeDriver();
 	
 	
-	public Reg_Action_Rubyat () {
+	public Reg_Action_Rubyat() {
 		
 		
 		objElements= new Reg_Elements_Rubyat();
