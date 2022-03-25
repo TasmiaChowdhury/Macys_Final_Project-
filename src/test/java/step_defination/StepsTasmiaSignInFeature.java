@@ -5,29 +5,28 @@ import org.testng.Assert;
 
 import Elements.ElementsTasmia;
 import Utilities.Helper;
-import Utilities.Set_Drivers;
 import actions.ActionsTasmia;
 import io.cucumber.java.en.*;
 
 public class StepsTasmiaSignInFeature {
 	
-	WebDriver driver;
-	ActionsTasmia action = new ActionsTasmia(driver);
+	ActionsTasmia action = new ActionsTasmia();
 
 	@Given("User is on Macys sign is page")
 	public void user_is_on_Macys_sign_is_page() {
-		
 		action.openMacysSignin();	
 	}
 
 	@When("User enters a valid email address")
 	public void user_enters_a_valid_email_address() throws InterruptedException {
 		action.inputEmail();
+		System.out.println("Calling input email method");
 	}
 
 	@And("User enters a Valid password")
 	public void user_enters_a_Valid_password() {
-		action.inputPass(); 
+		action.inputPass();
+		System.out.println("calling input password method ");
 	}
 
 	@And("User clicks on sign-in")

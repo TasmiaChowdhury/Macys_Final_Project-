@@ -1,11 +1,7 @@
 package Elements;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
-import Utilities.Set_Drivers;
 
 public class ElementsTasmia {
 	
@@ -18,6 +14,11 @@ public class ElementsTasmia {
 	@FindBy(xpath="//input[@id='sign-in']")
 	public WebElement clickSubmit;
 	
+	@FindBy (xpath="//input[@id='globalSearchInputField']")
+	public WebElement searchBox;
 	
+	@FindBy (xpath="//li[@data-search-term='mens shirts']")
+	public WebElement searchAutoSuggestions;
+	 
 
 }

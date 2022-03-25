@@ -8,8 +8,8 @@ import io.cucumber.testng.CucumberOptions;
 
 public class Runner_class {
 
-	@CucumberOptions(plugin = { "pretty", "html:target/reports/report.html", "json:target/reports/report.json" }, features = {
-	"src/test/resources/Features" }, glue = { "Macys_Final_Project.step_defination" }, tags = { "@chrome" }, monochrome = true)
+	@CucumberOptions(features = {
+	"src/test/resources/Features/Search_Macys" }, glue = { "Macys_Final_Project.step_defination" }, tags = { "@chrome", "@smoke" }, plugin = {"pretty", "html:target/maven-status/maven-compiler-plugin/testCompile/default-testCompile" }, monochrome = true)
 
 public class RunCucumberTest extends AbstractTestNGCucumberTests {
 

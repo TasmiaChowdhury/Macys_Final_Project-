@@ -9,12 +9,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Set_Drivers {
 	
 	public static WebDriver driver;
-	public static Set_Drivers set_drivers;
 	
-	public Set_Drivers(){
-		WebDriverManager.chromedriver().setup();
-		this.driver=new ChromeDriver();
-	}
+//	public Set_Drivers(){
+//		WebDriverManager.chromedriver().setup();
+//		driver = new ChromeDriver();
+//		System.out.println();
+//	}
 	
 	public static void setupChromeDriver(){
 		WebDriverManager.chromedriver().setup();

@@ -1,6 +1,7 @@
 #Author: Tasmia
 Feature: Sign In Functionailty
 
+  @chrome 
   Scenario: User should be able to sign in using valid eamil and password
     Given User is on Macys sign is page
     When User enters a valid email address
