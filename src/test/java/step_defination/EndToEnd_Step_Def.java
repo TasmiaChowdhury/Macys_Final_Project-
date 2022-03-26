@@ -1,6 +1,8 @@
 package step_defination;
 
 
+import org.openqa.selenium.WebDriver;
+
 // Sayed branches
 import actions.EndToEnd_Actions;
 import io.cucumber.java.en.Given;
@@ -10,10 +12,10 @@ import io.cucumber.java.en.When;
 public class EndToEnd_Step_Def {
 	
 	//EndToEnd_Actions eTeActions = new EndToEnd_Actions();
-	EndToEnd_Actions eTeActions = new EndToEnd_Actions();
+	//EndToEnd_Actions eTeActions = new EndToEnd_Actions();
 	
-	//EndToEnd_Actions eTeActions;
-	//WebDriver driver;
+	EndToEnd_Actions eTeActions;
+	WebDriver driver;
 	
 	@Given("User is on Macys.com home page.")
 	public void user_is_on_Macys_com_home_page() {
@@ -70,4 +72,5 @@ public class EndToEnd_Step_Def {
 	    
 	    
 	}
+	
 }

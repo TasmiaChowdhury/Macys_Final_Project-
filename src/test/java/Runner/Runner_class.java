@@ -4,13 +4,11 @@ package Runner;
 	import io.cucumber.testng.AbstractTestNGCucumberTests;
 	import io.cucumber.testng.CucumberOptions;
 
-
-
-
+	
 public class Runner_class {
 	@CucumberOptions(plugin = { "pretty", "html:target/cucumber", "json:target/cucumber-json.json" }, features = {
-	"src/test/resources/Features" }, glue = { "step_defination" }, tags = { "@chrome","@regression" }, monochrome = true)
-
+	"src/test/resources/Features" }, glue = { "Macys_Final_project.step_defination" }, tags = { "@chrome","@regression" }, monochrome = true)
+	
 public class RunCucumberTest extends AbstractTestNGCucumberTests {
 
 @BeforeTest
