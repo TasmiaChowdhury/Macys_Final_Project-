@@ -1,5 +1,6 @@
 Feature: hours and location
 This feature is testing if user is able to check hours and location
+  
   @chrome
   Scenario: User should be able to select Location and hours
     Given User is on Macys homepage Macy’s– Official Site 

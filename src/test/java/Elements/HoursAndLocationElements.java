@@ -1,12 +1,17 @@
 package Elements;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HoursAndLocationElements {
 
-	//nw
+	//WebDriver driver;
 	
-	@FindBy(xpath ="//*[@id=\"footer-redesign-row-1-panels-container\"]/div[3]/label/ul/li[4]/a")
+	//public HoursAndLocationElements(WebDriver driver) {
+		//this.driver = driver;
+	}
+	//@FindBy(xpath ="//a[normalize-space()='Locations & Hours']")
+	@FindBy(linkText = "Locations & Hours")
 	public WebElement HoursLocation;
 }
