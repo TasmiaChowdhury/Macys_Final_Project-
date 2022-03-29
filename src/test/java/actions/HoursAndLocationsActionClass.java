@@ -25,7 +25,7 @@ public class HoursAndLocationsActionClass {
 		Set_Drivers.driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 
 	}
-
+//xc
 	public void scrolldown() {
 		js.executeScript("window.scrollBy(0,14000)");
 
