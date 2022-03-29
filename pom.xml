@@ -10,8 +10,8 @@
        <maven.compiler.target>1.8</maven.compiler.target>
 </properties>
   
-   <dependencies>
-  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+  <dependencies>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -24,7 +24,6 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>5.0.3</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -46,7 +45,6 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.1.0</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -60,30 +58,20 @@
 			<artifactId>cucumber-java</artifactId>
 			<version>5.7.0</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-testng</artifactId>
 			<version>5.7.0</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>gherkin</artifactId>
 			<version>13.0.0</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc6 -->
-		<dependency>
-			<groupId>com.oracle.database.jdbc</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>11.2.0.4</version>
-		</dependency>
-		</dependencies>
-		
-		<build>
+	</dependencies>
+	<build>
 		<plugins>
 
 			<plugin>
@@ -94,19 +82,21 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M5</version>
 				<configuration>
+
 					<testFailureIgnore>true</testFailureIgnore>
+
 					<includes>
-						<include>**/UpsLoginTestRunner.java</include>
+						<include>**/Macys_runner.java</include>
 					</includes>
 					<excludes>
 						<exclude>none</exclude>
 					</excludes>
+
 				</configuration>
 			</plugin>
 
@@ -117,26 +107,26 @@
 				<executions>
 					<execution>
 						<id>execution</id>
-						<phase>test</phase>
+						<phase>verify</phase>
 						<goals>
 							<goal>generate</goal>
 						</goals>
 						<configuration>
 							<projectName>
-								Whatever Project Name
-							</projectName>
+							final project
+                            </projectName>
 							<skip>false</skip>
 							<outputDirectory>${project.build.directory}</outputDirectory>
 							<inputDirectory>${project.build.directory}</inputDirectory>
 							<jsonFiles>
 								<param>**/*.json</param>
 							</jsonFiles>
-							<classificationDirectory>${project.build.directory}</classificationDirectory>
+							<classificationDirectory>${project.build.directory}/classifications</classificationDirectory>
 							<classificationFiles>
 								<param>sample.properties</param>
 								<param>other.properties</param>
 							</classificationFiles>
-							<parallelTesting>false</parallelTesting>
+
 							<mergeFeaturesById>false</mergeFeaturesById>
 							<mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>
 							<checkBuildResult>false</checkBuildResult>

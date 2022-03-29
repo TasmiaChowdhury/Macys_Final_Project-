@@ -25,7 +25,7 @@ public class HoursAndLocationsStepdef {
 
 	@Then("User should click on Location and hours")
 	public void user_should_click_on_Location_and_hours() {
-	   Actions.HoursandLocation();
+	   Actions.HoursAndlocationLink();
 	    
 	}
 	
